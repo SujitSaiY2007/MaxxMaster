@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>False Positive</title>
+  <meta name="description" content="A short story game about AI in security. Train a model, tune it, attack it, defend it.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="top">
+      <span id="crumb">FALSE POSITIVE</span>
+      <button id="menu-btn" class="link" hidden>&larr; chapters</button>
+    </header>
+
+    <!-- Each chapter draws its interactive part here. -->
+    <main id="stage"></main>
+
+    <!-- Story text, instructions and choices appear here. -->
+    <section id="dialogue" hidden>
+      <div id="speaker" class="speaker"></div>
+      <p id="line"></p>
+      <div id="choices"></div>
+      <span id="more" aria-hidden="true">click or press Enter &#9656;</span>
+    </section>
+  </div>
+
+  <!-- Plain script tags, no build step: the game runs by opening this file. Order matters. -->
+  <script src="js/core/util.js"></script>
+  <script src="js/core/bayes.js"></script>
+  <script src="js/core/metrics.js"></script>
+  <script src="js/core/anomaly.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/chapters/1-rules.js"></script>
+  <script src="js/chapters/2-dial.js"></script>
+  <script src="js/chapters/3-normal.js"></script>
+  <script src="js/chapters/4-mirror.js"></script>
+  <script src="js/chapters/5-poison.js"></script>
+  <script src="js/chapters/6-whisper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
