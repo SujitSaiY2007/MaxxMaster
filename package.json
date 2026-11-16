@@ -1,0 +1,11 @@
+{
+  "name": "false-positive",
+  "version": "1.0.0",
+  "description": "A short story game about AI in security. No dependencies.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 8000"
+  }
+}
